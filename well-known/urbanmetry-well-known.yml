@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of urbanmetry.com and www.urbanmetry.com (2026-07-21)
+hosts:
+  - host: https://www.urbanmetry.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 400
+      - path: /.well-known/openid-configuration
+        status: 400
+      - path: /.well-known/oauth-authorization-server
+        status: 400
+      - path: /.well-known/api-catalog
+        status: 400
+      - path: /.well-known/ai-plugin.json
+        status: 400
+      - path: /llms.txt
+        status: 200
+        file: ../llms/urbanmetry-llms.txt
+        note: Wix-served llms.txt at the site root; documents the site MCP endpoint.
+      - path: /robots.txt
+        status: 200
+  - host: https://urbanmetry.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 400
+      - path: /.well-known/openid-configuration
+        status: 400
+      - path: /.well-known/oauth-authorization-server
+        status: 400
+      - path: /.well-known/api-catalog
+        status: 400
+      - path: /.well-known/ai-plugin.json
+        status: 400
+      - path: /llms.txt
+        status: 200
+      - path: /robots.txt
+        status: 200

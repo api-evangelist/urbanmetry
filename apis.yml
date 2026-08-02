@@ -1,7 +1,14 @@
 aid: urbanmetry
 name: UrbanMetry
-description: UrbanMetry is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: UrbanMetry is a Malaysia-based big data analytics firm specialising in
+  geospatial and urban intelligence for the property and real estate sector. It supports
+  developers, financial institutions, government bodies, retailers, and public transport
+  operators with property market intelligence, geo-behavioural analytics, and branch
+  location analysis, alongside consumer products UrbanVault (multi-bank mortgage
+  applications, in beta) and UrbanWave (home co-ownership and renovation funding).
+  A World Economic Forum Technology Pioneer, UrbanMetry publishes no public developer
+  API, but its website exposes a live Wix Site MCP endpoint and llms.txt for agentic
+  access to public site content.
 url: https://raw.githubusercontent.com/api-evangelist/urbanmetry/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Real Estate
+- Property
+- Geospatial Analytics
+- Urban Planning
+- Data Analytics
+- Location Intelligence
+- Malaysia
+image: https://static.wixstatic.com/media/75e2c0_25abd595c7e74e5f8ad96ef4a06774c4~mv2.png/v1/fit/w_2500,h_1330,al_c/75e2c0_25abd595c7e74e5f8ad96ef4a06774c4~mv2.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/urbanmetry-domain-security.yml
 - type: Website
   url: https://urbanmetry.com
+- type: MCPServer
+  url: mcp/urbanmetry-mcp.yml
+- type: LLMsTxt
+  url: llms/urbanmetry-llms.txt
+- type: WellKnown
+  url: well-known/urbanmetry-well-known.yml
+- type: Blog
+  url: https://www.urbanmetry.com/news
+- type: TermsOfService
+  url: https://www.urbanmetry.com/t-c
+- type: PrivacyPolicy
+  url: https://www.urbanmetry.com/t-c
+- type: LinkedIn
+  url: https://www.linkedin.com/company/urbanmetry
+- type: Contact
+  url: mailto:info@urbanmetry.com
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.urbanmetry.com/llms.txt
+status: published
+server:
+  name: urbanmetry-site
+  description: Wix Site MCP endpoint for the UrbanMetry website ("Site Visitor Assistant").
+    Documented by the provider in /llms.txt; verified live via a JSON-RPC initialize
+    handshake on 2026-07-21 (serverInfo "Site Visitor Assistant for site URBANMETRY",
+    protocolVersion 2025-03-26). No authentication required; exposes only public
+    site content.
+  transport: http
+  url: https://www.urbanmetry.com/_api/mcp
+  docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+  authentication: none
+  verified: '2026-07-21'
+tools:
+  - name: GetBusinessDetails
+    description: Retrieves business and site details such as timezone, email, phone, and address.
+  - name: SearchInSite
+    description: Searches the site for information.
+  - name: SearchSiteApiDocs
+    description: Retrieves the API documentation for the Wix business solutions installed
+      on this site and informs the AI client how to use the APIs.
+  - name: GenerateVisitorToken
+    description: Creates a new visitor session and obtains a visitor access token for the site.
+  - name: CallWixSiteAPI
+    description: Calls API methods on the site to perform actions on a visitor's behalf,
+      such as querying site data, booking an appointment, or starting a purchase.
+  - name: ReadFullDocsArticle
+    description: Fetches a complete article from the Wix developer documentation portal.
+  - name: ReadFullDocsMethodSchema
+    description: Fetches the full schema for a Wix API method.
